@@ -2,8 +2,7 @@
 include("../includes/config.php");
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Obtém diretamente os valores enviados
-    $email = $conn->real_escape_string($_POST["email"]);
+        $email = $conn->real_escape_string($_POST["email"]);
     $password = $_POST["password"];
 
     // Consulta o banco de dados
